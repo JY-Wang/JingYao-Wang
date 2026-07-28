@@ -8,7 +8,6 @@ body{
 margin:0;
 
 font-family:
-
 -apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
@@ -38,6 +37,7 @@ padding:40px 20px;
 
 
 
+
 header{
 
 background:#111;
@@ -52,11 +52,12 @@ padding:80px 0;
 
 
 
+
 h1{
 
 font-size:48px;
 
-margin-bottom:10px;
+margin:0;
 
 }
 
@@ -79,6 +80,7 @@ margin-top:30px;
 }
 
 
+
 nav a{
 
 color:white;
@@ -88,6 +90,7 @@ text-decoration:none;
 margin:0 15px;
 
 }
+
 
 
 
@@ -102,6 +105,8 @@ border-bottom:1px solid #ddd;
 h2{
 
 font-size:32px;
+
+margin-bottom:35px;
 
 }
 
@@ -118,10 +123,10 @@ margin:20px 0;
 border-radius:12px;
 
 box-shadow:
-
 0 5px 20px rgba(0,0,0,.05);
 
 }
+
 
 
 
@@ -130,6 +135,63 @@ a{
 color:#0366d6;
 
 }
+
+
+
+
+/* Contact */
+
+.contact-item{
+
+display:flex;
+
+align-items:center;
+
+margin:20px 0;
+
+font-size:18px;
+
+}
+
+
+
+.contact-item i{
+
+width:35px;
+
+font-size:22px;
+
+color:#333;
+
+}
+
+
+
+.contact-label{
+
+width:100px;
+
+font-weight:500;
+
+}
+
+
+
+.contact-item a{
+
+text-decoration:none;
+
+}
+
+
+
+
+.contact-item a:hover{
+
+text-decoration:underline;
+
+}
+
 
 
 
