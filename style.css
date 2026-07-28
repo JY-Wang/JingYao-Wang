@@ -1,13 +1,19 @@
 *{
+
 box-sizing:border-box;
+
 }
+
 
 
 body{
 
+
 margin:0;
 
+
 font-family:
+
 -apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
@@ -15,49 +21,72 @@ Arial,
 sans-serif;
 
 
+background:#fafafa;
+
+
 color:#222;
 
-background:#fafafa;
 
 line-height:1.8;
 
+
 }
+
 
 
 
 .container{
 
+
 max-width:900px;
+
 
 margin:auto;
 
+
 padding:40px 20px;
+
 
 }
 
 
+
+
+
+
+/* Header */
 
 
 header{
 
+
 background:#111;
+
 
 color:white;
 
+
 text-align:center;
 
-padding:80px 0;
+
+padding:90px 0;
+
 
 }
-
 
 
 
 h1{
 
-font-size:48px;
+
+font-size:52px;
+
 
 margin:0;
+
+
+letter-spacing:1px;
+
 
 }
 
@@ -65,142 +94,223 @@ margin:0;
 
 .subtitle{
 
+
 font-size:20px;
+
 
 opacity:.8;
 
+
 }
+
 
 
 
 nav{
 
-margin-top:30px;
+
+margin-top:35px;
+
 
 }
+
 
 
 
 nav a{
 
+
 color:white;
+
 
 text-decoration:none;
 
-margin:0 15px;
+
+margin:0 18px;
+
+
+font-size:16px;
+
 
 }
 
 
+
+nav a:hover{
+
+
+opacity:.7;
+
+
+}
+
+
+
+
+
+
+/* Section */
 
 
 section{
 
+
 border-bottom:1px solid #ddd;
 
+
 }
+
 
 
 
 h2{
 
-font-size:32px;
+
+font-size:34px;
+
 
 margin-bottom:35px;
 
+
 }
+
 
 
 
 .card{
 
+
 background:white;
+
 
 padding:25px;
 
+
 margin:20px 0;
+
 
 border-radius:12px;
 
+
 box-shadow:
-0 5px 20px rgba(0,0,0,.05);
+
+0 5px 20px rgba(0,0,0,.06);
+
 
 }
 
 
 
 
-a{
 
-color:#0366d6;
+.card h3{
+
+
+margin-top:0;
+
 
 }
+
+
+
 
 
 
 
 /* Contact */
 
+
 .contact-item{
+
 
 display:flex;
 
+
 align-items:center;
 
-margin:20px 0;
+
+margin:22px 0;
+
 
 font-size:18px;
 
+
 }
+
 
 
 
 .contact-item i{
 
-width:35px;
+
+width:40px;
+
 
 font-size:22px;
 
+
 color:#333;
 
+
 }
+
+
 
 
 
 .contact-label{
 
-width:100px;
+
+width:130px;
+
 
 font-weight:500;
 
+
 }
+
 
 
 
 .contact-item a{
 
+
+color:#0366d6;
+
+
 text-decoration:none;
 
-}
 
+}
 
 
 
 .contact-item a:hover{
 
+
 text-decoration:underline;
+
 
 }
 
 
 
 
+
+
+/* Footer */
+
+
 footer{
+
 
 text-align:center;
 
-padding:30px;
+
+padding:35px;
+
 
 color:#777;
+
 
 }
