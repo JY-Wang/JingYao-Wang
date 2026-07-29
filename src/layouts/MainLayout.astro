@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "JingYao Wang | Creator, Explorer, Builder",
+  description = "JingYao Wang - AI, Systems and Outdoor Exploration"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

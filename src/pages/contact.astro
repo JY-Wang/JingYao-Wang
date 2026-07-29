@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout title="联系 - JingYao Wang" description="JingYao Wang 的联系方式。">
+  <Header />
+
+  <main class="page">
+    <section class="page-header">
+      <p class="eyebrow">联系</p>
+      <h1>Contact</h1>
+      <p class="lead">如果你想了解 JYOS、AI、知识系统或相关项目，可以通过以下方式联系我。</p>
+    </section>
+
+    <section class="contact-list" aria-label="联系方式">
+      <a class="contact-item" href="https://jingyao.wang" target="_blank" rel="noreferrer" aria-label="Website jingyao.wang">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+        <strong>jingyao.wang</strong>
+      </a>
+
+      <a class="contact-item" href="https://github.com/JY-Wang" target="_blank" rel="noreferrer" aria-label="GitHub JY-Wang">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <strong>github.com/JY-Wang</strong>
+      </a>
+
+      <a class="contact-item" href="https://gitlab.com/JY-Wang" target="_blank" rel="noreferrer" aria-label="GitLab JY-Wang">
+        <i class="fa-brands fa-gitlab" aria-hidden="true"></i>
+        <strong>gitlab.com/JY-Wang</strong>
+      </a>
+
+      <a class="contact-item" href="https://huggingface.co/JY-Wang" target="_blank" rel="noreferrer" aria-label="Hugging Face JY-Wang">
+        <i class="fa-solid fa-face-smile" aria-hidden="true"></i>
+        <strong>huggingface.co/JY-Wang</strong>
+      </a>
+
+      <a class="contact-item" href="mailto:hi@jingyao.wang" aria-label="Email hi@jingyao.wang">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <strong>hi@jingyao.wang</strong>
+      </a>
+    </section>
+  </main>
+
+  <Footer />
+</MainLayout>

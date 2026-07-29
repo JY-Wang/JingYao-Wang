@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const projects: CollectionEntry<"projects">[] = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<MainLayout title="Projects | JingYao Wang" description="Projects by JingYao Wang.">
+  <Header />
+
+  <main class="page">
+    <section class="page-header">
+      <h2>Projects</h2>
+      <p class="lead">JYOS, Phoenix, AI systems, automation, and long-term experiments.</p>
+    </section>
+
+    <section class="project-list">
+      {sortedProjects.length > 0 ? (
+        sortedProjects.map((project) => (
+          <a class="card project-card" href={`/projects/${project.id}`}>
+            <p class="status">{project.data.status ?? "Active"}</p>
+            <h3>{project.data.title}</h3>
+            <p>{project.data.description}</p>
+            {project.data.tags && (
+              <div class="tags">
+                {project.data.tags.map((tag) => <span>{tag}</span>)}
+              </div>
+            )}
+          </a>
+        ))
+      ) : (
+        <div class="card">
+          <h3>No projects yet</h3>
+          <p>Add Markdown files to src/content/projects.</p>
+        </div>
+      )}
+    </section>
+  </main>
+
+  <Footer />
+</MainLayout>

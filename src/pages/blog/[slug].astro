@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props as { post: CollectionEntry<"blog"> };
+const { Content } = await render(post);
+---
+
+<MainLayout title={`${post.data.title} | JingYao Wang`} description={post.data.description}>
+  <Header />
+
+  <main class="page article-page">
+    <a class="back-link" href="/blog">Back to Blog</a>
+
+    <section class="page-header">
+      <p class="status">{post.data.date.toLocaleDateString("zh-CN")}</p>
+      <h2>{post.data.title}</h2>
+      <p class="lead">{post.data.description}</p>
+      {post.data.tags && (
+        <div class="tags">
+          {post.data.tags.map((tag) => <span>{tag}</span>)}
+        </div>
+      )}
+    </section>
+
+    <article class="card prose">
+      <Content />
+    </article>
+  </main>
+
+  <Footer />
+</MainLayout>
