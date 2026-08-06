@@ -1,11 +1,20 @@
-<header class="hero-header">
-  <div class="container">
-    <h1>JingYao Wang</h1>
-    <p class="subtitle">AI · Systems · Blog</p>
+---
+const { compact = false } = Astro.props;
+---
+
+<header class:list={["sky-hero", { compact }]}>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="cloud cloud-one" aria-hidden="true"></div>
+  <div class="cloud cloud-two" aria-hidden="true"></div>
+  <div class="cloud cloud-three" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-kicker">PERSONAL NOTES ON AI, CODE & LIFE</p>
+    <h1>Clear thoughts,<br />under an open sky.</h1>
+    <p class="hero-subtitle">JingYao Wang · Building calm systems for people and AI.</p>
 
     <nav aria-label="主导航">
-      <a href="/#about">About</a>
-      <a href="/projects">Projects</a>
+      <a href="/">Home</a>
       <a href="/blog">Blog</a>
       <a href="/#contact">Contact</a>
     </nav>

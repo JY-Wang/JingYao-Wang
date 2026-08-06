@@ -1,46 +1,29 @@
 ---
 import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
-
 import MainLayout from "../../layouts/MainLayout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 
-const posts: CollectionEntry<"blog">[] = await getCollection("blog");
-const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<MainLayout title="Blog | JingYao Wang" description="Notes by JingYao Wang.">
-  <Header />
-
-  <main class="page">
-    <section class="page-header">
+<MainLayout title="Blog | JingYao Wang" description="关于 AI、知识系统、软件与生活的全部文章。">
+  <Header compact />
+  <main class="page-shell">
+    <div class="page-intro">
+      <p class="eyebrow">ALL WRITING</p>
       <h2>Blog</h2>
-      <p class="lead">Notes about AI, knowledge systems, technology, and personal systems.</p>
-    </section>
-
-    <section class="project-list">
-      {sortedPosts.length > 0 ? (
-        sortedPosts.map((post) => (
-          <a class="card" href={`/blog/${post.id}`}>
-            <p class="status">{post.data.date.toLocaleDateString("zh-CN")}</p>
-            <h3>{post.data.title}</h3>
-            <p>{post.data.description}</p>
-            {post.data.tags && (
-              <div class="tags">
-                {post.data.tags.map((tag) => <span>{tag}</span>)}
-              </div>
-            )}
-          </a>
-        ))
-      ) : (
-        <div class="card">
-          <h3>No posts yet</h3>
-          <p>Add Markdown files to src/content/blog.</p>
-        </div>
-      )}
-    </section>
+      <p>关于 AI、知识系统、软件创造，以及如何更清醒地使用技术。</p>
+    </div>
+    <div class="post-list">
+      {posts.map((post) => (
+        <a class="post-row" href={`/blog/${post.id}`}>
+          <time>{post.data.date.toLocaleDateString("zh-CN")}</time>
+          <div><h3>{post.data.title}</h3><p>{post.data.description}</p></div>
+          <span>→</span>
+        </a>
+      ))}
+    </div>
   </main>
-
   <Footer />
 </MainLayout>
