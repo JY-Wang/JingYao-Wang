@@ -6,10 +6,7 @@
    id="svg1"
    width="139.84297"
    height="139.84282"
-   viewBox="0 0 139.84297 139.84282"
-   sodipodi:docname="sun_max.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   viewBox="-5 -5 149.84297 149.84282"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -111,29 +108,8 @@
          id="path24" />
     </clipPath>
   </defs>
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1">
-    <inkscape:page
-       x="-15.118134"
-       y="-15.117795"
-       inkscape:label="1"
-       id="page1"
-       width="170.07867"
-       height="170.07867"
-       margin="15.118134 15.117333 15.118667 15.1176"
-       bleed="0" />
-  </sodipodi:namedview>
   <g
      id="layer-MC0"
-     inkscape:groupmode="layer"
-     inkscape:label="sunshine 图像"
      transform="translate(-15.118134,-15.117795)">
     <path
        id="path1"
