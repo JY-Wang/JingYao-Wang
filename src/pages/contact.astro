@@ -3,16 +3,32 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
-<MainLayout title="Contact | JingYao Wang">
+
+<MainLayout title="Contact | JingYao Wang" description="联系 JingYao Wang。">
   <Header compact />
+
   <main class="page-shell contact-page">
-    <div class="page-intro"><p class="eyebrow">CONTACT</p><h2>保持联系</h2><p>欢迎交流 AI、知识系统、JYOS 与软件创造。</p></div>
+    <div class="page-intro">
+      <p class="eyebrow">CONTACT</p>
+      <h2>保持联系</h2>
+      <p>欢迎交流 AI、知识系统、JYOS 与软件创造。</p>
+    </div>
+
     <div class="contact-list">
-      <a href="https://github.com/JY-Wang"><i class="fa-brands fa-github"></i><span>GitHub</span><small>github.com/JY-Wang</small></a>
-      <a href="https://gitlab.com/JY-Wang"><i class="fa-brands fa-gitlab"></i><span>GitLab</span><small>gitlab.com/JY-Wang</small></a>
-      <a href="https://huggingface.co/JY-Wang"><i class="fa-solid fa-face-smile"></i><span>Hugging Face</span><small>huggingface.co/JY-Wang</small></a>
-      <a href="mailto:hi@jingyao.wang"><i class="fa-solid fa-envelope"></i><span>Email</span><small>hi@jingyao.wang</small></a>
+      <a href="https://github.com/JY-Wang" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span><small>github.com/JY-Wang</small>
+      </a>
+      <a href="https://gitlab.com/JY-Wang" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-gitlab" aria-hidden="true"></i><span>GitLab</span><small>gitlab.com/JY-Wang</small>
+      </a>
+      <a href="https://huggingface.co/JY-Wang" target="_blank" rel="noreferrer">
+        <i class="fa-solid fa-face-smile" aria-hidden="true"></i><span>Hugging Face</span><small>huggingface.co/JY-Wang</small>
+      </a>
+      <a href="mailto:hi@jingyao.wang">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span><small>hi@jingyao.wang</small>
+      </a>
     </div>
   </main>
+
   <Footer />
 </MainLayout>
