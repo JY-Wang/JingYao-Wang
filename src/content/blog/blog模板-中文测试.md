@@ -13,5 +13,5 @@ tags:
 
 这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
 
+下面是测试图片
 ![sun](https://img.jingyao.wang/Obsidian/2026/08/sun.png)
-![preview](https://img.jingyao.wang/Obsidian/2026/08/preview.svg)
