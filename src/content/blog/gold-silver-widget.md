@@ -1,9 +1,10 @@
-# 黄金/白银实时行情浮窗
-
-桌面常驻置顶小工具，数据来自「融通金」(jzj9999.com) 网页版的私有 WebSocket 行情网关。
-
-## 目录结构
-
+---
+title: "gold-silver-widget"
+description: "小工具"
+date: 2026-08-07
+tags: 小公举
+---
+# Hello JYOS
 ```
 gold-silver-widget/
 ├── protocol.py     # 手写 protobuf 编解码（不依赖 protoc/grpcio-tools）
