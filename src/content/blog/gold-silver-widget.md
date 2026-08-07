@@ -1,8 +1,8 @@
 ---
 title: "gold-silver-widget"
-description: "小工具"
+description: "gold-silver-widget"
 date: 2026-08-07
-tags: 小公举
+tags: [JYOS, AI, 个人系统]
 ---
 # Hello JYOS
 ```
